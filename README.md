@@ -13,6 +13,8 @@
 - 为每个驱动因子搭建完整因果传导链
 - 剔除次要信息，而非简单压缩每一段文字
 - 区分已披露事实、公司指引、分析师测算与未经证实信息
+- 对证券代码、财务数据、产能口径及利润质量进行公开来源核验
+- 发现研报、纪要与公告冲突时，以交易所或公司原始披露为准
 - 过滤可能属于重大未公开信息的内容
 - 产出适配机构客户的简洁卖方话术
 
@@ -44,7 +46,15 @@
 6. 粘贴原始材料，要求总结核心投资逻辑
 
 示例请求：
-> 请根据以下公开电话会纪要总结核心投资逻辑，按机构销售转发格式输出，并执行合规脱敏。
+> 请根据以下公开电话会纪要总结核心投资逻辑，核验公司代码、财务数据及公开披露状态，按机构销售转发格式输出，并执行合规脱敏。
+
+## 事实核验
+- 开启网页浏览后，优先核对交易所公告、巨潮资讯原始披露、定期报告及公开投资者关系记录。
+- 对公司名称与证券代码、报告期、单位、合并口径、指标定义进行交叉检查。
+- 严格区分实际业绩、公司公开指引、分析师预测与情景测算。
+- 产能、产量、出货量、销量与订单金额不得混用。
+- 利润增长涉及投资收益、公允价值变动、政府补助等重要非经常性因素时，不得全部归因于主业改善。
+- 输入材料与原始公告冲突时，以原始公告为准；无法解决的冲突直接删除并提示使用者。
 
 ## 标准输出格式
 输出必须遵循如下结构：
@@ -73,6 +83,7 @@
 
 使用者必须保证：
 - 所有对外表述均有公开信息支撑
+- 所有关键数字均已核对公司主体、报告期、单位和指标口径
 - 未公告订单、客户身份、价格、产能规划、管理层目标需要删除或泛化处理
 - 公司指引和已实现业绩严格区分
 - 预测内容表述为情景/测算，不视为确定结果
@@ -93,6 +104,8 @@ This skill transforms raw notes into WeCom-ready sales pitches by:
 - Removing marginal content instead of compressing every paragraph uniformly
 - Separating disclosed facts, company guidance, analyst estimates and unsubstantiated claims
 - Filtering potentially material non-public information
+- Verifying security codes, financial figures, capacity definitions and earnings quality against public primary sources
+- Resolving conflicts in favor of exchange filings and original company disclosures
 - Generating concise sell-side language for institutional clients
 
 ## Use Cases
@@ -123,7 +136,15 @@ This skill transforms raw notes into WeCom-ready sales pitches by:
 6. Paste source material and ask for core investment logic
 
 Sample prompt:
-> 请根据以下公开电话会纪要总结核心投资逻辑，按机构销售转发格式输出，并执行合规脱敏。
+> 请根据以下公开电话会纪要总结核心投资逻辑，核验公司代码、财务数据及公开披露状态，按机构销售转发格式输出，并执行合规脱敏。
+
+## Fact Verification
+- With browsing enabled, prioritize exchange filings, original CNINFO disclosures, financial reports and public investor-relations records.
+- Cross-check company identity, security code, reporting period, units, consolidation scope and metric definitions.
+- Separate realized results, public company guidance, analyst forecasts and scenarios.
+- Never confuse capacity, output, shipment, sales or order value.
+- Check material non-recurring items before attributing net-profit growth to core operations.
+- When source materials conflict with primary disclosures, use the primary disclosure; omit unresolved claims and alert the user.
 
 ## Standard Output Structure
 Output must follow this template:
@@ -152,6 +173,7 @@ This skill only provides a first-pass desensitization filter. It **does not repl
 
 Users must guarantee that:
 - All external claims are backed by public information
+- All material figures have been checked for entity, period, unit and definition
 - Unannounced orders, customer identities, prices, capacity plans and management targets are removed or generalized
 - Company guidance is clearly separated from realized results
 - Forecasts are framed as estimates or scenarios, not certain outcomes

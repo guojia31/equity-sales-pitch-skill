@@ -67,3 +67,23 @@ Examples:
 ## 15. Does this skill replace a compliance review?
 
 No. It is a drafting and first-pass de-sensitization tool. External securities communications remain subject to the institution’s formal compliance, research, and information-barrier procedures.
+
+## 16. Does the skill independently verify numbers?
+
+When browsing is enabled, it should verify material company-specific figures against exchange filings, CNINFO disclosures, financial reports and public investor-relations records before drafting. It should check the company and security code, period, unit, accounting scope and metric definition. If browsing is unavailable, uncertain exact figures should be omitted rather than assumed correct.
+
+## 17. What happens if a research report conflicts with an official filing?
+
+The official primary disclosure takes precedence. The skill should use the verified figure, exclude the conflicting figure, and alert the user outside the client-facing pitch. If the discrepancy cannot be resolved, the claim should be omitted.
+
+## 18. How are analyst forecasts handled?
+
+Analyst forecasts are not actual results and are not company guidance. They may be used only when clearly labeled as estimates or scenarios and when the assumptions are relevant. They should be removed when they rely on unverified orders, undisclosed capacity, private management targets or aggressive utilization assumptions.
+
+## 19. How does the skill assess earnings quality?
+
+When profit growth is a core argument, the skill should check material investment income, fair-value gains, government grants, impairment reversals, asset disposals and other non-recurring items. It must not attribute total net-profit growth to core operations when these items are material.
+
+## 20. What common data-definition errors should be checked?
+
+The skill should not mix annual and interim data, consolidated and parent-company results, gross and net profit, attributable and total net profit, or capacity, output, shipment, sales and order value. Planned capacity must also be separated from commissioned and effective capacity.

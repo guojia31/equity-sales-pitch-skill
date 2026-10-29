@@ -95,6 +95,33 @@ Apply the following treatment:
 - Type 6 must be removed or generalized according to `compliance-rules.md`.
 - Type 7 should normally be deleted.
 
+## Mandatory Fact Verification
+
+When browsing is available, verify every material company-specific fact before drafting. Do not assume that a polished research report, meeting note, cover table, or spreadsheet is accurate.
+
+Use the following source priority:
+
+1. Stock-exchange filings and original CNINFO disclosures.
+2. Annual, interim and quarterly reports, company announcements, and public investor-relations records.
+3. Official company websites, government publications, and industry-association data.
+4. Other authoritative public primary sources.
+5. Reputable secondary sources only when no primary source is available.
+
+Another broker's research report may help locate a claim but must not be the final evidence for an exact company fact when a primary disclosure is available.
+
+For every retained exact figure, verify the company name and security code, reporting period, unit, accounting scope, metric definition, and public disclosure date. Specifically distinguish:
+
+- Annual data from quarterly or half-year data.
+- Consolidated data from parent-company data.
+- Revenue from order value and cash collection.
+- Nameplate capacity from effective capacity, output, shipment and sales.
+- Gross profit from operating profit, attributable net profit and adjusted profit.
+- Realized results from company guidance, analyst forecasts and scenario calculations.
+
+If the supplied material conflicts with a higher-priority public source, use the higher-priority source, exclude the conflicting figure from the pitch, and briefly alert the user outside the pitch. If the conflict cannot be resolved, omit the claim rather than selecting the more bullish number.
+
+Check earnings quality when profit growth is central to the thesis. Material investment income, fair-value gains, government grants, impairment reversals, asset disposals or other non-recurring items must not be attributed to core operations. Use core-business language only to the extent supported by operating revenue, gross margin, operating profit or other relevant public evidence.
+
 ## Investment-Logic Selection
 
 Rank candidate logic by current or potential profit contribution, magnitude of volume/price/mix/utilization/cost change, strategic importance, competitive barrier, sustainability, and availability of public verification indicators.
@@ -122,38 +149,44 @@ Do not split one causal chain into several thin paragraphs. Do not combine unrel
 
 ## Workflow
 
-### Step 1: Establish the information boundary
+### Step 1: Establish the information boundary and source list
 
 Determine whether the source is public. If the source contains information whose disclosure status cannot be confirmed, treat that information as non-public.
 
-### Step 2: Build the business map
+List the primary public documents needed to verify the material claims. When browsing is unavailable, clearly state that exact figures have not been independently verified and omit any figure whose reliability is uncertain.
+
+### Step 2: Verify material facts
+
+Apply the source hierarchy and cross-check company identity, time period, units, definitions, disclosure status and accounting basis. Resolve internal inconsistencies and source conflicts before selecting the investment logic.
+
+### Step 3: Build the business map
 
 Classify businesses as core business, earnings-growth business, second growth curve, or peripheral business.
 
-### Step 3: Extract the earnings bridge
+### Step 4: Extract the earnings bridge
 
 For each important business, identify the demand driver, supply or competitive change, company capability, volume/price/mix/utilization/cost impact, earnings impact, and verification indicators.
 
-### Step 4: Rank and delete
+### Step 5: Rank and delete
 
 Select the three to five strongest causal chains. Delete weaker material rather than compressing all source sections equally.
 
-### Step 5: Conduct compliance de-sensitization
+### Step 6: Conduct compliance de-sensitization
 
 Apply every rule in `compliance-rules.md`. Remove sensitive order, customer, pricing, schedule, capacity, and management-target information unless publicly disclosed.
 
-### Step 6: Draft the title
+### Step 7: Draft the title
 
 Combine the two strongest drivers where possible. Do not include target prices, predicted share-price gains, or absolute bullish claims.
 
-### Step 7: Draft the body
+### Step 8: Draft the body
 
 Write three to five `#` paragraphs. Preserve material operating detail while avoiding unnecessary enumeration.
 
-### Step 8: Write the investment recommendation
+### Step 9: Write the investment recommendation
 
 Summarize the existing earnings foundation, principal incremental driver, expected financial transmission, and key operating indicators requiring verification. End exactly with `建议重点关注。`
 
-### Step 9: Final audit
+### Step 10: Final audit
 
-Confirm that the text is suitable for external forwarding; no potentially material non-public information remains; guidance is not presented as actual performance; forecasts are not guaranteed; no stock-price forecast appears; core logic remains complete; peripheral logic has been removed; and the final sentence is `建议重点关注。`
+Confirm that the text is suitable for external forwarding; every retained exact figure has a traceable public source; source conflicts have been resolved; company identity, periods, units and metric definitions are consistent; material non-recurring items have been checked; no potentially material non-public information remains; guidance is not presented as actual performance; analyst forecasts are not presented as company guidance; forecasts are not guaranteed; no stock-price forecast appears; core logic remains complete; peripheral logic has been removed; and the final sentence is `建议重点关注。`
